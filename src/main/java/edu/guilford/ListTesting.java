@@ -9,7 +9,7 @@ import java.util.LinkedList;
         public static void main(String[] args) {
 
             // This is the constant number for the number of cars that are going to be generated
-            final int NUM_CARS = 10000;
+            final int NUM_CARS = 1000;
     
             // Make an arraylist of cars
             ArrayList<Cars> carsArray = new ArrayList<Cars>();
@@ -28,7 +28,7 @@ import java.util.LinkedList;
             Collections.sort(carsArray);
             endTime = System.nanoTime();
             duration = (endTime - startTime) / (1000000);
-            System.out.println("Time to sort the arraylist by make: " + duration + " milliseconds");
+            System.out.println("Time to sort the arraylist by brand: " + duration + " milliseconds");
     
             // Get the time on how long it takes to shuffle the arraylist by milliseconds
             startTime = System.nanoTime();
@@ -75,7 +75,7 @@ import java.util.LinkedList;
             Collections.sort(carsLinked);
             endTime = System.nanoTime();
             duration = (endTime - startTime) / (1000000);
-            System.out.println("Time to sort the linkedlist by make: " + duration + " milliseconds");
+            System.out.println("Time to sort the linkedlist by brand: " + duration + " milliseconds");
     
             // Get the time on how long it takes to shuffle the linkedlist by milliseconds
             startTime = System.nanoTime();
